@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <img
+            class="header__img"
+            src="./img/photo.jpg"
+            alt="photo"
+            srcset="./img/photo@2x.jpg"
+          />
+          <div class="header__desc">
+            <h1 class="header__title">Софья Илясова</h1>
+            <p class="header__text">
+              фрилансер, веб-разработчик, <br />создание сайтов
+            </p>
+            <div class="header__btns">
+              <a class="btn" href="#portfolio">Портфолио</a>
+              <a class="btn-outline" href="#contacts">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="portfolio__title">Портфолио</h2>
+
+          <div class="portfolio__projects">
+            <article class="project">
+              <a href="#">
+                <img
+                  class="project__img"
+                  src="./img/projects/project-01.jpg"
+                  srcset="./img/projects/project-01@2x.jpg"
+                  alt="изображение проекта Сайт магазина мебели"
+                />
+              </a>
+              <h3 class="project__title">
+                <a href="#"> Сайт магазина мебели </a>
+              </h3>
+            </article>
+
+            <article class="project">
+              <a href="#">
+                <img
+                  class="project__img"
+                  src="./img/projects/project-02.jpg"
+                  srcset="./img/projects/project-02@2x.jpg"
+                  alt="изображение проекта Сайт туристического агентства"
+                />
+              </a>
+              <h3 class="project__title">
+                <a href="#"> Сайт туристического агентства </a>
+              </h3>
+            </article>
+
+            <article class="project">
+              <a href="#">
+                <img
+                  class="project__img"
+                  src="./img/projects/project-03.jpg"
+                  srcset="./img/projects/project-03@2x.jpg"
+                  alt="изображение проекта Сайт жилого комплекса"
+                />
+              </a>
+              <h3 class="project__title">
+                <a href="#"> Сайт жилого комплекса </a>
+              </h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Контакты</h2>
+
+          <div class="contacts__messangers">
+            <a class="messanger" href="https://t.me/kuzpugonka" target="_blank">
+              <img src="./img/icons/telegram.svg" alt=" Telegram" />
+              Написать в Telegram
+            </a>
+
+            <a
+              class="messanger"
+              href="https://wa.me/79106599255"
+              target="_blank"
+            >
+              <img src="./img/icons/whatsapp.svg" alt="WhatsApp" />
+              Отправить в WhatsApp
+            </a>
+
+            <a
+              class="messanger"
+              href="https://vk.me/kuzpugonka"
+              target="_blank"
+            >
+              <img src="./img/icons/vk.svg" alt="Вконтакте" />
+              Связаться Вконтакте
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <p>
+            © Софья Илясова
+            <br />
+            HTML верстальщик, создание сайтов, Тамбов
+          </p>
+          <p>💻 Макет сверстан на курсе в ВебКадеми</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

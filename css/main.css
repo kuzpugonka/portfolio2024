@@ -1,0 +1,203 @@
+/* fonts */
+
+/* montserrat-300 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-300.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/montserrat-v26-cyrillic_latin-300.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/montserrat-v26-cyrillic_latin-regular.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/montserrat-v26-cyrillic_latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* base */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* header */
+.header {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 0 0 100px 0;
+  background: #252525 linear-gradient(158deg, #2f2f2f 0%, #202020 100%);
+  color: #fff;
+}
+.header__row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.header__img {
+  border-radius: 80px;
+  width: 540px;
+  height: 470px;
+}
+/* .header__desc {} */
+.header__title {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.header__text {
+  font-weight: 300;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.header__btns {
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  border-radius: 8px;
+  padding: 16px 25px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  background-color: #000;
+
+  transition: background-color 0.2s ease-in;
+}
+.btn:hover {
+  background-color: #1782cf;
+}
+.btn-outline {
+  padding: 16px 25px;
+  border: 1px solid #3b3b3b;
+  border-radius: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  background-color: #282828;
+
+  transition: border-color 0.2s ease-in;
+}
+.btn-outline:hover {
+  border-color: #1782cf;
+}
+
+/* portfolio */
+.portfolio {
+  padding: 80px 0;
+}
+.portfolio__title {
+  font-weight: 700;
+  font-size: 52px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 65px;
+}
+.portfolio__projects {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+}
+.project {
+  text-align: center;
+}
+.project__img {
+  border-radius: 30px;
+  margin-bottom: 30px;
+  transition: opacity 0.2s ease-in;
+}
+.project__img:hover {
+  opacity: 0.8;
+}
+.project__title {
+  font-size: 22px;
+}
+.project__title a {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* contacts */
+.contacts {
+  background-color: #252525;
+  border-radius: 100px 0 0 0;
+  padding: 80px 0;
+  color: #fff;
+}
+.contacts__title {
+  font-weight: 700;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+.contacts__messangers {
+  display: flex;
+  gap: 30px;
+}
+.messanger {
+  flex-grow: 1;
+
+  border-radius: 20px;
+  border: 1px solid #363636;
+  padding: 46px 20px;
+
+  color: #fff;
+  font-size: 20px;
+
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  transition: background-color 0.2s ease-in;
+}
+.messanger:hover {
+  background-color: #1e1e1e;
+}
+
+/* footer */
+.footer {
+  background: #1e1e1e;
+  padding: 30px 0;
+ 
+  text-align: center;
+  color: #5d5d5d;
+}
+.footer a {
+  color: #5886a8;
+}
+.footer__inner {
+  font-size: 14px;
+}
+.footer__inner p + p {
+  margin-top: 15px;
+}
