@@ -238,7 +238,6 @@ body {
 .inner__page-img {
   display: block;
   width: 434px;
-  height: 865px;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -251,8 +250,8 @@ body {
   max-width: 770px;
   background-color: #f1f1f1;
 
-  transition: background-color .2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 .inner__page-backlink:hover {
-background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
