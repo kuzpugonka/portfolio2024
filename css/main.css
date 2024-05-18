@@ -42,7 +42,7 @@ body {
   font-size: 16px;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -63,9 +63,7 @@ body {
 .header__img {
   border-radius: 80px;
   width: 540px;
-  height: 470px;
 }
-/* .header__desc {} */
 .header__title {
   font-weight: 700;
   font-size: 60px;
@@ -163,6 +161,7 @@ body {
 }
 .contacts__messangers {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .messanger {
